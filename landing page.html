@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f3f4f6; 
+        }
+        header {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff9f00;
+        }
+        #hero {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 200px;
+            background-image: url('https://img.freepik.com/premium-photo/aromatherapy-concept-with-pine-oil-yellow_185193-32918.jpg');
+            background-size: cover;
+            background-position: center;
+            flex-wrap: wrap;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-text {
+            z-index: 2;
+            max-width: 600px;
+            position: relative;
+        }
+        .hero-text h1 {
+            font-size: 3em;
+            text-shadow: 1px 1px 5px rgba(253, 251, 251, 0.5);
+        }
+        .hero-text button {
+            background-color: #080808;
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .hero-text button:hover {
+            background-color: #e68a00;
+        }
+        #features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+        .column {
+            width: 45%;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .column:hover {
+            transform: translateY(-5px);
+        }
+        .column img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .column h2 {
+            color: #ff9f00;
+            margin: 20px 0 10px;
+        }
+        .column p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer .socials a {
+            color: #ff9f00;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+        footer .socials a:hover {
+            color: white;
+        }
+        @media only screen and (max-width: 768px) {
+            #features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .column {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+            #hero {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">AuraBlend</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#serums">Serums</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Unlock Radiant Skin & Gorgeous Hair</h1>
+            <button>Shop Now</button>
+        </div>
+    </section>
+    <section id="features">
+        <div class="column face-serum">
+            <img src="face.jpg" alt="Face Serum">
+            <h2>Face Serum</h2>
+            <p>Brightens, hydrates, and protects your skin.</p>
+        </div>
+        <div class="column hair-serum">
+            <img src="hair.jpg" alt="Hair Serum">
+            <h2>Hair Serum</h2>
+            <p>Nourishes and strengthens your hair.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+        <p>Contact us: info@AuraBlend.com</p>
+    </footer>
+</body>
+</html>
